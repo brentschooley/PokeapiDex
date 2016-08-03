@@ -12,7 +12,7 @@ import Siesta
 
 class PokemonTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var imageView: RemoteImageView!
+    @IBOutlet weak var pokemonImageView: RemoteImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
     override func awakeFromNib() {

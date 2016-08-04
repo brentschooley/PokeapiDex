@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0182BF94BE03D79463973F6E7226BF7B /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA588C0A21549684EC8E2BFCF1EC91D /* Pipeline.swift */; };
+		03B0C7B8DD59C160AA0E06887A782AB6 /* WeakCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BA8D57BFF9D36A3D1F126AE4967E9E /* WeakCache.swift */; };
+		135B8981A5F1D9DB41E58C4F2D6EB4FA /* NSURL+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531727BBCB0B289ED6EB89CC34ECCDEE /* NSURL+Siesta.swift */; };
+		15941977136E92AEDD42DDB0EC329260 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262A09BF513D76AADD1A755AC3B032F /* Deprecations.swift */; };
+		1E6D1DC5B2D304F3FB9343DFC8756BDA /* GCD+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3DC94A76F5D0983A687A15E7E7C5F2 /* GCD+Siesta.swift */; };
+		24F5D0AB0690B9429CFE54F7474B88DD /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DFD14FF8D0ABBE6BC1892E0CBC4EEC /* Networking.swift */; };
+		26056A62E7CB219E8A69D70502530672 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E518CF93BCAC517B6179DCAC7C5EB05 /* Configuration.swift */; };
+		2DED906EB9FA23C1193C49E993E09ABA /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F3A95EF2127396109A8DA7D6CE7E56 /* Resource.swift */; };
+		319E408E1B729BD98C3B87368A1213D9 /* ARC+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407F292C6DD385DA36EB72D5568DB231 /* ARC+Siesta.swift */; };
+		31C5BD073C1F4E271912B8E8BA4AA0A6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64827A450FD14D394C644E228D65A39 /* Request.swift */; };
+		35BCFCD3030058927E497E253FEB40AB /* Info-iOS.plist in Sources */ = {isa = PBXBuildFile; fileRef = 2AF4329E2025B5AD7E86F731178DBB52 /* Info-iOS.plist */; };
+		3CB1D74043D6A2B02177AB2905B22C7F /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC78C14F52697FA3D5DD7C4ECFB379A /* Logging.swift */; };
+		3D2003BD241B3B781516F0D0E3660F2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		3E3A0821D3B32B4C6921656F3BA31E32 /* Pods-PokeapiDex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E00D4FCC916EA9F379A3BFB5E6E96D /* Pods-PokeapiDex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E630D7A5AC14CB03EA16FA7C18D033B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECABCB9D9E1F48025744BF906B09353 /* Service.swift */; };
+		3F389250831BAFA2427CA76A755261E5 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D59979F6E27F22CBAB5BC489C7F37C61 /* SwiftyJSON-dummy.m */; };
+		42FB7182D22A5BF8E2C8BE5A497884EE /* Siesta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 163823AA5AE6B00292A48A1410469F93 /* Siesta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43DEBE6F36221DA4632DBC4D2F6B5657 /* ProgressTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789162551732C4B43BCD734350DA252 /* ProgressTracker.swift */; };
+		43FC600B5140180492C909CE2B292E5A /* ResourceStatusOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = E361F25E24C6BE56690B707B37FA748E /* ResourceStatusOverlay.xib */; };
+		467FBF7B86175834DB4CB089C80DA64E /* ResourceStatusOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C326B44AF8E86B2299438B0058CDDF /* ResourceStatusOverlay.swift */; };
+		46F254FB1196A3A0BBBD91132E3B90C1 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D719CBBBEC05D8BA87F3426994954 /* Progress.swift */; };
+		4E25FACA4B82D239DFE168ED42954F08 /* DebugFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A13BC7050D489DAE88774738276D9F /* DebugFormatting.swift */; };
+		5122F98A4ED6B83D83DB7649DAF51E28 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D282A8EF7475E1C9F47BC6DEC2A47F79 /* Entity.swift */; };
+		78D488085E3FCE1C6E76173E14F1CC4F /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74729DCE43F985FAADE5E79F72D0C84B /* Error.swift */; };
+		7CF3E81AD4AD6875EAB47415DA6E6E2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		81C2DD0700D362008B18381FC3D7292D /* ResourceStatusOverlay.xib in Sources */ = {isa = PBXBuildFile; fileRef = E361F25E24C6BE56690B707B37FA748E /* ResourceStatusOverlay.xib */; };
+		8803CCE9CC2C8394E71D5C9D80F50082 /* ConfigurationPatternConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96460CEA97013CFAB806F7A810E3D66C /* ConfigurationPatternConvertible.swift */; };
+		8AB7A71421BE7F26ED39F100D2E9EEB6 /* ResourceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66580F44F5D8183C3C75766B296E0B6 /* ResourceObserver.swift */; };
+		8F1881884BF0AA792D4F33BB72D6BB21 /* Pods-PokeapiDex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E672DC9CAD83AFFC228C747C5A9DCD91 /* Pods-PokeapiDex-dummy.m */; };
+		95EFECCC813E222727F6D51C553AEF2A /* String+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E30C894E2A0537433B21E760AD74CAD /* String+Siesta.swift */; };
+		98D5B3E662F315C260906E04260AACA2 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A778F536FDBED937100D32ACD753D9 /* RemoteImageView.swift */; };
+		9F70DB1C8A2BE99708CB6FA62C491581 /* EntityCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E0ECF5F68246C6004C537D07F6F62 /* EntityCache.swift */; };
+		A0C36D747933F855AB718F0D65875715 /* RequestCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8948FAC81B40A83116F3FF40920E7B /* RequestCallbacks.swift */; };
+		A44052D4E32496102B618EDDD576A633 /* Collection+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597329E131247A03F3A3B2B88F247E0 /* Collection+Siesta.swift */; };
+		AB493428278B11316C21C73E2F4C4746 /* Info-macOS.plist in Sources */ = {isa = PBXBuildFile; fileRef = E449470E8E070D72648A14F724E85115 /* Info-macOS.plist */; };
+		AE086A0FEE7E7E8D689F8281FCFC6B83 /* RequestCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8210A9CBB24AE1AE35C6EEF6A61E4F /* RequestCreation.swift */; };
+		B65ABC3245C3A2697D5B9D15A14DC17A /* Regex+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D8EA8B8540A08CA5E7280FCC00C840 /* Regex+Siesta.swift */; };
+		C147AB87D42E42F2BA335E31E5DC5EBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C979C5C9163F9CB35C85E609400A1B9B /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2AA24F7F5300848C830BF762BBDB6 /* NetworkRequest.swift */; };
+		CDA6E84FEF56D723E7CB6B3E708B6F30 /* OpenEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7318BE85E60C3BC152743CDB46872081 /* OpenEnum.swift */; };
+		D2E7F21E1912DA336CCC82FFFB94EFCA /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5310DC3EA9CCAC4439888D6FD3A07A1B /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3356EA7296C642AACAC579FA9B73C3F /* ResponseTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8397FE88ABAB1D8373A1660EC621B8A /* ResponseTransformer.swift */; };
+		DFC579949C647C805FAA70BB830D197D /* Siesta.h in Headers */ = {isa = PBXBuildFile; fileRef = F7446EF10E38CB684157A54DFEC8B24D /* Siesta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0E913FF9158859BA8B3F4F8120B9276 /* Siesta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 740BB081C6A74A4B30C4FBF90DDEFD35 /* Siesta-dummy.m */; };
+		F0C9835ACC5E4AF57CD79A6EDF81778D /* Siesta-ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625D4C4586A0D024DEB8EEF40269BB5F /* Siesta-ObjC.swift */; };
+		F3239FF25B20E0E3BA6C32FBD5CDEFD2 /* Networking-NSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59F98487B7B3C56FF8831E8C8C1B56D /* Networking-NSURLSession.swift */; };
+		FCF9A9F3E677F2F9B68C4E513CE4AFC2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D6A7BBDE60939DAF40720C6456885 /* SwiftyJSON.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35E3D16E9E12C562535C1A4D4AD80E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 706DD4118E62E12DAE6B10C329B2F908;
+			remoteInfo = SwiftyJSON;
+		};
+		6C2A3CABA34F347FE1C2AE3A607F6FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4C4324C5FA1B6A8ACB1BE7CBB00F5A;
+			remoteInfo = Siesta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09E00D4FCC916EA9F379A3BFB5E6E96D /* Pods-PokeapiDex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PokeapiDex-umbrella.h"; sourceTree = "<group>"; };
+		1254AF5A61B2AE9478526D9951147F71 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12A778F536FDBED937100D32ACD753D9 /* RemoteImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteImageView.swift; path = Source/UI/RemoteImageView.swift; sourceTree = "<group>"; };
+		144D6A7BBDE60939DAF40720C6456885 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		14F3A95EF2127396109A8DA7D6CE7E56 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Source/Resource.swift; sourceTree = "<group>"; };
+		163823AA5AE6B00292A48A1410469F93 /* Siesta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Siesta-umbrella.h"; sourceTree = "<group>"; };
+		22708BB75E3BA23B35B106B3D7EE8727 /* Pods-PokeapiDex-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PokeapiDex-acknowledgements.plist"; sourceTree = "<group>"; };
+		2AF4329E2025B5AD7E86F731178DBB52 /* Info-iOS.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Source/Info-iOS.plist"; sourceTree = "<group>"; };
+		2E30C894E2A0537433B21E760AD74CAD /* String+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Siesta.swift"; path = "Source/Support/String+Siesta.swift"; sourceTree = "<group>"; };
+		2ECABCB9D9E1F48025744BF906B09353 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Source/Service.swift; sourceTree = "<group>"; };
+		3262A09BF513D76AADD1A755AC3B032F /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Source/Support/Deprecations.swift; sourceTree = "<group>"; };
+		339DCB804D3D00C3D35A0A4DADFA854E /* Siesta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Siesta.xcconfig; sourceTree = "<group>"; };
+		356E0ECF5F68246C6004C537D07F6F62 /* EntityCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EntityCache.swift; path = Source/EntityCache.swift; sourceTree = "<group>"; };
+		381C3EC6D9C54746E0CC526CB7DE60E9 /* Pods_PokeapiDex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeapiDex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		407F292C6DD385DA36EB72D5568DB231 /* ARC+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ARC+Siesta.swift"; path = "Source/Support/ARC+Siesta.swift"; sourceTree = "<group>"; };
+		4C584A052212B3E32F58E4F163034DBC /* Pods-PokeapiDex-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PokeapiDex-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4E518CF93BCAC517B6179DCAC7C5EB05 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Source/Configuration.swift; sourceTree = "<group>"; };
+		507252DFDA1FC521028B0DC5A104F9B2 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		5310DC3EA9CCAC4439888D6FD3A07A1B /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		531727BBCB0B289ED6EB89CC34ECCDEE /* NSURL+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+Siesta.swift"; path = "Source/Support/NSURL+Siesta.swift"; sourceTree = "<group>"; };
+		5DA588C0A21549684EC8E2BFCF1EC91D /* Pipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pipeline.swift; path = Source/Pipeline.swift; sourceTree = "<group>"; };
+		625D4C4586A0D024DEB8EEF40269BB5F /* Siesta-ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Siesta-ObjC.swift"; path = "Source/Support/Siesta-ObjC.swift"; sourceTree = "<group>"; };
+		6459C20FF0A217B4D9934AA453B7E21B /* Siesta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Siesta.modulemap; sourceTree = "<group>"; };
+		6525A693A4275E5B482E2FC26E5537D6 /* Pods-PokeapiDex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PokeapiDex.release.xcconfig"; sourceTree = "<group>"; };
+		6D85BFFD4E41043D5B42A203C35F495F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EC78C14F52697FA3D5DD7C4ECFB379A /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = Source/Support/Logging.swift; sourceTree = "<group>"; };
+		7318BE85E60C3BC152743CDB46872081 /* OpenEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenEnum.swift; path = Source/Support/OpenEnum.swift; sourceTree = "<group>"; };
+		740BB081C6A74A4B30C4FBF90DDEFD35 /* Siesta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Siesta-dummy.m"; sourceTree = "<group>"; };
+		74729DCE43F985FAADE5E79F72D0C84B /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		79C4B9E55DF8873747548549270F3DD0 /* Pods-PokeapiDex-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PokeapiDex-frameworks.sh"; sourceTree = "<group>"; };
+		8597329E131247A03F3A3B2B88F247E0 /* Collection+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Siesta.swift"; path = "Source/Support/Collection+Siesta.swift"; sourceTree = "<group>"; };
+		8F3DC94A76F5D0983A687A15E7E7C5F2 /* GCD+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "GCD+Siesta.swift"; path = "Source/Support/GCD+Siesta.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		948411B8E784BDBE094CD96FFC3BAFC1 /* Pods-PokeapiDex-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PokeapiDex-resources.sh"; sourceTree = "<group>"; };
+		96460CEA97013CFAB806F7A810E3D66C /* ConfigurationPatternConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfigurationPatternConvertible.swift; path = Source/ConfigurationPatternConvertible.swift; sourceTree = "<group>"; };
+		9B18F7ACF631959D99C931049DD09242 /* Pods-PokeapiDex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PokeapiDex.debug.xcconfig"; sourceTree = "<group>"; };
+		9B8948FAC81B40A83116F3FF40920E7B /* RequestCallbacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCallbacks.swift; path = Source/Request/RequestCallbacks.swift; sourceTree = "<group>"; };
+		A5C326B44AF8E86B2299438B0058CDDF /* ResourceStatusOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceStatusOverlay.swift; path = Source/UI/ResourceStatusOverlay.swift; sourceTree = "<group>"; };
+		A7519A589DD2350E5DD2FD6DB1525321 /* Siesta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Siesta-prefix.pch"; sourceTree = "<group>"; };
+		A789162551732C4B43BCD734350DA252 /* ProgressTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressTracker.swift; path = Source/Request/ProgressTracker.swift; sourceTree = "<group>"; };
+		A7DFD14FF8D0ABBE6BC1892E0CBC4EEC /* Networking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = Source/Networking.swift; sourceTree = "<group>"; };
+		A8397FE88ABAB1D8373A1660EC621B8A /* ResponseTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseTransformer.swift; path = Source/ResponseTransformer.swift; sourceTree = "<group>"; };
+		B64827A450FD14D394C644E228D65A39 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request/Request.swift; sourceTree = "<group>"; };
+		B8D8EA8B8540A08CA5E7280FCC00C840 /* Regex+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Regex+Siesta.swift"; path = "Source/Support/Regex+Siesta.swift"; sourceTree = "<group>"; };
+		B9BA8D57BFF9D36A3D1F126AE4967E9E /* WeakCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakCache.swift; path = Source/Support/WeakCache.swift; sourceTree = "<group>"; };
+		BC8A60DD3DB5265358F3D880EA6EA928 /* Pods-PokeapiDex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PokeapiDex.modulemap"; sourceTree = "<group>"; };
+		BE25A555000F57452EC8E7A072208701 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA5FCF4FCD920ED79AAB492A5607994 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C59F98487B7B3C56FF8831E8C8C1B56D /* Networking-NSURLSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Networking-NSURLSession.swift"; path = "Source/Networking-NSURLSession.swift"; sourceTree = "<group>"; };
+		C66580F44F5D8183C3C75766B296E0B6 /* ResourceObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceObserver.swift; path = Source/ResourceObserver.swift; sourceTree = "<group>"; };
+		C9BEBD9C9D62FBDFB036CE6065F97C4F /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		CD8210A9CBB24AE1AE35C6EEF6A61E4F /* RequestCreation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCreation.swift; path = Source/Request/RequestCreation.swift; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D09D719CBBBEC05D8BA87F3426994954 /* Progress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Progress.swift; path = Source/Support/Progress.swift; sourceTree = "<group>"; };
+		D282A8EF7475E1C9F47BC6DEC2A47F79 /* Entity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = Source/Entity.swift; sourceTree = "<group>"; };
+		D30550B4C245FDAB5E49BB5AFB231A72 /* Siesta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Siesta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D59979F6E27F22CBAB5BC489C7F37C61 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		E2C2AA24F7F5300848C830BF762BBDB6 /* NetworkRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = Source/Request/NetworkRequest.swift; sourceTree = "<group>"; };
+		E361F25E24C6BE56690B707B37FA748E /* ResourceStatusOverlay.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ResourceStatusOverlay.xib; path = Source/UI/ResourceStatusOverlay.xib; sourceTree = "<group>"; };
+		E449470E8E070D72648A14F724E85115 /* Info-macOS.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Source/Info-macOS.plist"; sourceTree = "<group>"; };
+		E672DC9CAD83AFFC228C747C5A9DCD91 /* Pods-PokeapiDex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PokeapiDex-dummy.m"; sourceTree = "<group>"; };
+		E87421BE9E6921435A63BF8F1097A714 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		F3A13BC7050D489DAE88774738276D9F /* DebugFormatting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DebugFormatting.swift; path = Source/Support/DebugFormatting.swift; sourceTree = "<group>"; };
+		F7446EF10E38CB684157A54DFEC8B24D /* Siesta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Siesta.h; path = Source/Support/Siesta.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00B74936D7A937CE6EFCC3BB19E82F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF3E81AD4AD6875EAB47415DA6E6E2E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A6EFE13834D9D8C1B31119B168117E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2003BD241B3B781516F0D0E3660F2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7459415B88B4DAEABCDD3D853453C7BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C147AB87D42E42F2BA335E31E5DC5EBB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F1A9C4460058CCFF206B953A32DEBEE /* Siesta */ = {
+			isa = PBXGroup;
+			children = (
+				F548BD5F641E042E9E7A5328A3477C30 /* Core */,
+				53772095C2357A162BE6E363F17956AA /* Support Files */,
+			);
+			path = Siesta;
+			sourceTree = "<group>";
+		};
+		2EB1D22B7089387F22E6A49EC25C1A3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1254AF5A61B2AE9478526D9951147F71 /* Info.plist */,
+				507252DFDA1FC521028B0DC5A104F9B2 /* SwiftyJSON.modulemap */,
+				C9BEBD9C9D62FBDFB036CE6065F97C4F /* SwiftyJSON.xcconfig */,
+				D59979F6E27F22CBAB5BC489C7F37C61 /* SwiftyJSON-dummy.m */,
+				E87421BE9E6921435A63BF8F1097A714 /* SwiftyJSON-prefix.pch */,
+				5310DC3EA9CCAC4439888D6FD3A07A1B /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		3497CCE8ED6B1A258267DF05E231ABAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F1A9C4460058CCFF206B953A32DEBEE /* Siesta */,
+				432F7197B75DF4CF553BCFEF7E5BEF92 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		432F7197B75DF4CF553BCFEF7E5BEF92 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				144D6A7BBDE60939DAF40720C6456885 /* SwiftyJSON.swift */,
+				2EB1D22B7089387F22E6A49EC25C1A3A /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		4DC09D33868E65BCBB4EDF6DA7B7C528 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B56756DA885DA8ED7A820B98297925F0 /* Pods-PokeapiDex */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		53772095C2357A162BE6E363F17956AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D85BFFD4E41043D5B42A203C35F495F /* Info.plist */,
+				6459C20FF0A217B4D9934AA453B7E21B /* Siesta.modulemap */,
+				339DCB804D3D00C3D35A0A4DADFA854E /* Siesta.xcconfig */,
+				740BB081C6A74A4B30C4FBF90DDEFD35 /* Siesta-dummy.m */,
+				A7519A589DD2350E5DD2FD6DB1525321 /* Siesta-prefix.pch */,
+				163823AA5AE6B00292A48A1410469F93 /* Siesta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Siesta";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3497CCE8ED6B1A258267DF05E231ABAB /* Pods */,
+				FFA14AF183962AB1637D1709B8E4D443 /* Products */,
+				4DC09D33868E65BCBB4EDF6DA7B7C528 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B56756DA885DA8ED7A820B98297925F0 /* Pods-PokeapiDex */ = {
+			isa = PBXGroup;
+			children = (
+				BEA5FCF4FCD920ED79AAB492A5607994 /* Info.plist */,
+				BC8A60DD3DB5265358F3D880EA6EA928 /* Pods-PokeapiDex.modulemap */,
+				4C584A052212B3E32F58E4F163034DBC /* Pods-PokeapiDex-acknowledgements.markdown */,
+				22708BB75E3BA23B35B106B3D7EE8727 /* Pods-PokeapiDex-acknowledgements.plist */,
+				E672DC9CAD83AFFC228C747C5A9DCD91 /* Pods-PokeapiDex-dummy.m */,
+				79C4B9E55DF8873747548549270F3DD0 /* Pods-PokeapiDex-frameworks.sh */,
+				948411B8E784BDBE094CD96FFC3BAFC1 /* Pods-PokeapiDex-resources.sh */,
+				09E00D4FCC916EA9F379A3BFB5E6E96D /* Pods-PokeapiDex-umbrella.h */,
+				9B18F7ACF631959D99C931049DD09242 /* Pods-PokeapiDex.debug.xcconfig */,
+				6525A693A4275E5B482E2FC26E5537D6 /* Pods-PokeapiDex.release.xcconfig */,
+			);
+			name = "Pods-PokeapiDex";
+			path = "Target Support Files/Pods-PokeapiDex";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F548BD5F641E042E9E7A5328A3477C30 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				407F292C6DD385DA36EB72D5568DB231 /* ARC+Siesta.swift */,
+				8597329E131247A03F3A3B2B88F247E0 /* Collection+Siesta.swift */,
+				4E518CF93BCAC517B6179DCAC7C5EB05 /* Configuration.swift */,
+				96460CEA97013CFAB806F7A810E3D66C /* ConfigurationPatternConvertible.swift */,
+				F3A13BC7050D489DAE88774738276D9F /* DebugFormatting.swift */,
+				3262A09BF513D76AADD1A755AC3B032F /* Deprecations.swift */,
+				D282A8EF7475E1C9F47BC6DEC2A47F79 /* Entity.swift */,
+				356E0ECF5F68246C6004C537D07F6F62 /* EntityCache.swift */,
+				74729DCE43F985FAADE5E79F72D0C84B /* Error.swift */,
+				8F3DC94A76F5D0983A687A15E7E7C5F2 /* GCD+Siesta.swift */,
+				2AF4329E2025B5AD7E86F731178DBB52 /* Info-iOS.plist */,
+				E449470E8E070D72648A14F724E85115 /* Info-macOS.plist */,
+				6EC78C14F52697FA3D5DD7C4ECFB379A /* Logging.swift */,
+				A7DFD14FF8D0ABBE6BC1892E0CBC4EEC /* Networking.swift */,
+				C59F98487B7B3C56FF8831E8C8C1B56D /* Networking-NSURLSession.swift */,
+				E2C2AA24F7F5300848C830BF762BBDB6 /* NetworkRequest.swift */,
+				531727BBCB0B289ED6EB89CC34ECCDEE /* NSURL+Siesta.swift */,
+				7318BE85E60C3BC152743CDB46872081 /* OpenEnum.swift */,
+				5DA588C0A21549684EC8E2BFCF1EC91D /* Pipeline.swift */,
+				D09D719CBBBEC05D8BA87F3426994954 /* Progress.swift */,
+				A789162551732C4B43BCD734350DA252 /* ProgressTracker.swift */,
+				B8D8EA8B8540A08CA5E7280FCC00C840 /* Regex+Siesta.swift */,
+				12A778F536FDBED937100D32ACD753D9 /* RemoteImageView.swift */,
+				B64827A450FD14D394C644E228D65A39 /* Request.swift */,
+				9B8948FAC81B40A83116F3FF40920E7B /* RequestCallbacks.swift */,
+				CD8210A9CBB24AE1AE35C6EEF6A61E4F /* RequestCreation.swift */,
+				14F3A95EF2127396109A8DA7D6CE7E56 /* Resource.swift */,
+				C66580F44F5D8183C3C75766B296E0B6 /* ResourceObserver.swift */,
+				A5C326B44AF8E86B2299438B0058CDDF /* ResourceStatusOverlay.swift */,
+				E361F25E24C6BE56690B707B37FA748E /* ResourceStatusOverlay.xib */,
+				A8397FE88ABAB1D8373A1660EC621B8A /* ResponseTransformer.swift */,
+				2ECABCB9D9E1F48025744BF906B09353 /* Service.swift */,
+				F7446EF10E38CB684157A54DFEC8B24D /* Siesta.h */,
+				625D4C4586A0D024DEB8EEF40269BB5F /* Siesta-ObjC.swift */,
+				2E30C894E2A0537433B21E760AD74CAD /* String+Siesta.swift */,
+				B9BA8D57BFF9D36A3D1F126AE4967E9E /* WeakCache.swift */,
+				FDDFB7789418DCE71D150346E284120B /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		FDDFB7789418DCE71D150346E284120B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FFA14AF183962AB1637D1709B8E4D443 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				381C3EC6D9C54746E0CC526CB7DE60E9 /* Pods_PokeapiDex.framework */,
+				D30550B4C245FDAB5E49BB5AFB231A72 /* Siesta.framework */,
+				BE25A555000F57452EC8E7A072208701 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B31E122D151BBF9B11767A405D03248 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3A0821D3B32B4C6921656F3BA31E32 /* Pods-PokeapiDex-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1125EB478D61F3F02CB964AB5F7D18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E7F21E1912DA336CCC82FFFB94EFCA /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3705286C552B08430606129447B88577 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FB7182D22A5BF8E2C8BE5A497884EE /* Siesta-umbrella.h in Headers */,
+				DFC579949C647C805FAA70BB830D197D /* Siesta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		706DD4118E62E12DAE6B10C329B2F908 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C32FA4E1F184C55AFEC55EDE95ED5D1 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				DFD52023737FFB42C1E34572C484476F /* Sources */,
+				00B74936D7A937CE6EFCC3BB19E82F2A /* Frameworks */,
+				0C1125EB478D61F3F02CB964AB5F7D18 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = BE25A555000F57452EC8E7A072208701 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BB4C4324C5FA1B6A8ACB1BE7CBB00F5A /* Siesta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A01BD71BE1138C5613046847ED0AA13 /* Build configuration list for PBXNativeTarget "Siesta" */;
+			buildPhases = (
+				FE46D67350632E1CF72889B6C6EA5AE5 /* Sources */,
+				1A6EFE13834D9D8C1B31119B168117E7 /* Frameworks */,
+				3705286C552B08430606129447B88577 /* Headers */,
+				6371215A612076DC1F0180CD7EA1BD4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Siesta;
+			productName = Siesta;
+			productReference = D30550B4C245FDAB5E49BB5AFB231A72 /* Siesta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CAC14CDF684AFB58CDCDE43151241595 /* Pods-PokeapiDex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC7ACE017021C9DBE2E9513BEF7430FC /* Build configuration list for PBXNativeTarget "Pods-PokeapiDex" */;
+			buildPhases = (
+				0DA3D41A5FD11153EBCA8A0850F61337 /* Sources */,
+				7459415B88B4DAEABCDD3D853453C7BB /* Frameworks */,
+				0B31E122D151BBF9B11767A405D03248 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41E1A29FB85000355D1BB47841778F10 /* PBXTargetDependency */,
+				6270D1B061AC740D6C720E31CCCDBAA6 /* PBXTargetDependency */,
+			);
+			name = "Pods-PokeapiDex";
+			productName = "Pods-PokeapiDex";
+			productReference = 381C3EC6D9C54746E0CC526CB7DE60E9 /* Pods_PokeapiDex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FFA14AF183962AB1637D1709B8E4D443 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAC14CDF684AFB58CDCDE43151241595 /* Pods-PokeapiDex */,
+				BB4C4324C5FA1B6A8ACB1BE7CBB00F5A /* Siesta */,
+				706DD4118E62E12DAE6B10C329B2F908 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6371215A612076DC1F0180CD7EA1BD4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43FC600B5140180492C909CE2B292E5A /* ResourceStatusOverlay.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DA3D41A5FD11153EBCA8A0850F61337 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1881884BF0AA792D4F33BB72D6BB21 /* Pods-PokeapiDex-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFD52023737FFB42C1E34572C484476F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F389250831BAFA2427CA76A755261E5 /* SwiftyJSON-dummy.m in Sources */,
+				FCF9A9F3E677F2F9B68C4E513CE4AFC2 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE46D67350632E1CF72889B6C6EA5AE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319E408E1B729BD98C3B87368A1213D9 /* ARC+Siesta.swift in Sources */,
+				A44052D4E32496102B618EDDD576A633 /* Collection+Siesta.swift in Sources */,
+				26056A62E7CB219E8A69D70502530672 /* Configuration.swift in Sources */,
+				8803CCE9CC2C8394E71D5C9D80F50082 /* ConfigurationPatternConvertible.swift in Sources */,
+				4E25FACA4B82D239DFE168ED42954F08 /* DebugFormatting.swift in Sources */,
+				15941977136E92AEDD42DDB0EC329260 /* Deprecations.swift in Sources */,
+				5122F98A4ED6B83D83DB7649DAF51E28 /* Entity.swift in Sources */,
+				9F70DB1C8A2BE99708CB6FA62C491581 /* EntityCache.swift in Sources */,
+				78D488085E3FCE1C6E76173E14F1CC4F /* Error.swift in Sources */,
+				1E6D1DC5B2D304F3FB9343DFC8756BDA /* GCD+Siesta.swift in Sources */,
+				35BCFCD3030058927E497E253FEB40AB /* Info-iOS.plist in Sources */,
+				AB493428278B11316C21C73E2F4C4746 /* Info-macOS.plist in Sources */,
+				3CB1D74043D6A2B02177AB2905B22C7F /* Logging.swift in Sources */,
+				F3239FF25B20E0E3BA6C32FBD5CDEFD2 /* Networking-NSURLSession.swift in Sources */,
+				24F5D0AB0690B9429CFE54F7474B88DD /* Networking.swift in Sources */,
+				C979C5C9163F9CB35C85E609400A1B9B /* NetworkRequest.swift in Sources */,
+				135B8981A5F1D9DB41E58C4F2D6EB4FA /* NSURL+Siesta.swift in Sources */,
+				CDA6E84FEF56D723E7CB6B3E708B6F30 /* OpenEnum.swift in Sources */,
+				0182BF94BE03D79463973F6E7226BF7B /* Pipeline.swift in Sources */,
+				46F254FB1196A3A0BBBD91132E3B90C1 /* Progress.swift in Sources */,
+				43DEBE6F36221DA4632DBC4D2F6B5657 /* ProgressTracker.swift in Sources */,
+				B65ABC3245C3A2697D5B9D15A14DC17A /* Regex+Siesta.swift in Sources */,
+				98D5B3E662F315C260906E04260AACA2 /* RemoteImageView.swift in Sources */,
+				31C5BD073C1F4E271912B8E8BA4AA0A6 /* Request.swift in Sources */,
+				A0C36D747933F855AB718F0D65875715 /* RequestCallbacks.swift in Sources */,
+				AE086A0FEE7E7E8D689F8281FCFC6B83 /* RequestCreation.swift in Sources */,
+				2DED906EB9FA23C1193C49E993E09ABA /* Resource.swift in Sources */,
+				8AB7A71421BE7F26ED39F100D2E9EEB6 /* ResourceObserver.swift in Sources */,
+				467FBF7B86175834DB4CB089C80DA64E /* ResourceStatusOverlay.swift in Sources */,
+				81C2DD0700D362008B18381FC3D7292D /* ResourceStatusOverlay.xib in Sources */,
+				D3356EA7296C642AACAC579FA9B73C3F /* ResponseTransformer.swift in Sources */,
+				3E630D7A5AC14CB03EA16FA7C18D033B /* Service.swift in Sources */,
+				E0E913FF9158859BA8B3F4F8120B9276 /* Siesta-dummy.m in Sources */,
+				F0C9835ACC5E4AF57CD79A6EDF81778D /* Siesta-ObjC.swift in Sources */,
+				95EFECCC813E222727F6D51C553AEF2A /* String+Siesta.swift in Sources */,
+				03B0C7B8DD59C160AA0E06887A782AB6 /* WeakCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41E1A29FB85000355D1BB47841778F10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Siesta;
+			target = BB4C4324C5FA1B6A8ACB1BE7CBB00F5A /* Siesta */;
+			targetProxy = 6C2A3CABA34F347FE1C2AE3A607F6FDC /* PBXContainerItemProxy */;
+		};
+		6270D1B061AC740D6C720E31CCCDBAA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 706DD4118E62E12DAE6B10C329B2F908 /* SwiftyJSON */;
+			targetProxy = 35E3D16E9E12C562535C1A4D4AD80E7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F62586A4125868CA1C16D45A1C099C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6525A693A4275E5B482E2FC26E5537D6 /* Pods-PokeapiDex.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PokeapiDex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PokeapiDex/Pods-PokeapiDex.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PokeapiDex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		86C83F4B668F8BE203DBCB9AE93316C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B18F7ACF631959D99C931049DD09242 /* Pods-PokeapiDex.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PokeapiDex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PokeapiDex/Pods-PokeapiDex.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PokeapiDex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB561F660596373C0589146623821FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339DCB804D3D00C3D35A0A4DADFA854E /* Siesta.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Siesta/Siesta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Siesta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Siesta/Siesta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Siesta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C8B5A6B9F6647C01A6026214BEF651E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339DCB804D3D00C3D35A0A4DADFA854E /* Siesta.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Siesta/Siesta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Siesta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Siesta/Siesta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Siesta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DBF9A6920B9148BD951D5C8D3AAA43EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BEBD9C9D62FBDFB036CE6065F97C4F /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DCBEA8CFCD9AAA85F4081FF0376DBC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BEBD9C9D62FBDFB036CE6065F97C4F /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C32FA4E1F184C55AFEC55EDE95ED5D1 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBEA8CFCD9AAA85F4081FF0376DBC7C /* Debug */,
+				DBF9A6920B9148BD951D5C8D3AAA43EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A01BD71BE1138C5613046847ED0AA13 /* Build configuration list for PBXNativeTarget "Siesta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB561F660596373C0589146623821FCF /* Debug */,
+				C8B5A6B9F6647C01A6026214BEF651E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC7ACE017021C9DBE2E9513BEF7430FC /* Build configuration list for PBXNativeTarget "Pods-PokeapiDex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86C83F4B668F8BE203DBCB9AE93316C8 /* Debug */,
+				0F62586A4125868CA1C16D45A1C099C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

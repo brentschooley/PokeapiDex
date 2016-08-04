@@ -1,0 +1,17 @@
+PODS:
+  - Siesta (1.0-beta.8):
+    - Siesta/Core (= 1.0-beta.8)
+  - Siesta/Core (1.0-beta.8)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Siesta (>= 1.0-beta.8a)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Siesta: 5c05b45b31dfb29e4b8bd1c38f74559edd26101c
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 97073a9222cb4780d83a52095df6514a4a5d63eb
+
+COCOAPODS: 1.0.1

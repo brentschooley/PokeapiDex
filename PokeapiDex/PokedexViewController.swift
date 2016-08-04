@@ -12,32 +12,16 @@ import Siesta
 
 class PokedexViewController: UITableViewController {
 
-    var pokemonViewController: PokemonViewController? = nil
+    // MARK: - Resource code
+    
+    // Replace these with Pokemon!
     var objects = [AnyObject]()
 
 
+    // MARK: - View Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let split = self.splitViewController {
-            let controllers = split.viewControllers
-            self.pokemonViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? PokemonViewController
-        }
-    }
-
-    
-
-
-    // MARK: - Segues
-
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow {
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! PokemonViewController
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
-            }
-        }
     }
 
     // MARK: - Table View
@@ -52,7 +36,7 @@ class PokedexViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PokemonCell", forIndexPath: indexPath) as! PokemonTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("PokemonCell", forIndexPath: indexPath)
 
         // Get pokemon out of pokemon resource
         
@@ -60,10 +44,15 @@ class PokedexViewController: UITableViewController {
         
         return cell
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - Segues
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showDetail" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                
+            }
+        }
     }
 
 }

@@ -52,6 +52,8 @@ class PokemonViewController: UIViewController, ResourceObserver {
     override func viewDidLoad() {
         super.viewDidLoad()
         statusOverlay.embedIn(self)
+        
+        showPokemon()
     }
 
     override func didReceiveMemoryWarning() {
